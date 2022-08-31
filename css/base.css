@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+/* 글자모양,크기,색상 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:12px;
+    color:#333333;
+}
+
+
+a{
+    text-decoration:none;
+    color:#333333;
+}
+
+.h_inner{
+    background-color:#4E4D5F;
+}
+.h_top{
+    width:1020px;
+    height:30px;
+    margin:0px auto;
+
+}
+
+.sns{
+    width:760px;
+    float:left;
+    text-align:right;
+}
+header .lnb{
+    width:260px;
+    float:right;
+}
+header .h_inner>.h_top>.lnb>ul{
+    display:flex;
+    justify-content:space-around;
+    background-color:#525d9f;
+}
+header .lnb a{
+    color:#ffffff;
+    line-height:30px;
+}
+header .lnb>ul>li::after{
+    content:"·";
+    color:#ffffff;
+    padding-left:22px;
+}
+.lnb >ul > li:last-child::after{
+    display:none;
+}
+/* 메인내비게이션 */
+
+.h_bottom{
+    width:1020px;
+    height:80px;
+    margin:0px auto;
+}
+.gnb{
+    width:1020px;
+    position:relative;
+    margin-left:20px;
+}
+.gnb > ul{
+    display:flex;
+    justify-content:end;
+}
+
+.gnb > ul >li >a{
+    margin:0px 5px;
+    padding:0px 20px;
+    font-size:16px;
+    font-weight:500;
+}
+.gnb > ul > li >a:hover{
+    color:#525d9f;
+}
+.gnb>ul>li:last-child>a:hover{
+    color:#10a010;
+}
+
+/* 서브내비게이션 */
+.sub{
+    padding:20px 0px;
+}
+.sub>li{
+    line-height:30px;
+}
+.sub>li>a{
+    font-size:12px;
+    padding:0px 22px;
+}
+.sub>li>a:hover{
+    font-weight:bold;
+    color:#525d9f;
+}
+.g_wrap{
+    width:1020px;
+    background-color:#ffffff;
+    height:20px;
+    position:absolute;
+    transition:0.5s;
+    top:90px;
+    overflow:hidden;
+}
+.g_wrap:hover{
+    height:200px;
+}
+
+/* 푸터서식 */
+.f_inner{
+    width:1020px;
+    margin:0px auto;
+    position:relative;
+}
+
+.f_inner>h2 {
+    position:absolute;
+    right:0px;
+}
+.f_inner .lnb>ul>li{
+    display:inline;
+}
+.f_inner .lnb>ul>li>a{
+    color:#333333;
+    line-height:40px;
+    padding:0px 10px;
+}
+.f_inner .lnb>ul>li>a:hover{
+    text-decoration:underline;
+}
+.f_inner address{
+    padding-top:20px;
+}

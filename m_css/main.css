@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+main{}
+main .slide{
+    height:60vh;/*vertical height*/
+    overflow:hidden;
+    position:relative;
+}
+main .slide> h2{
+    display:none;
+}
+.swiper-slide{
+    position:relative;
+}
+.swiper-slide>h2{
+    position:absolute;
+    color:#ffffff;
+    background-color:rgba(0,0,0,.8);
+    font-size:20px;
+    font-weight:500;
+    width:230px;
+    text-align:center;
+    padding:6px 10px;
+    line-height:30px;
+    left:50%;
+    top:26%;
+    transform:translate(-50%,-50%);
+    border-radius:40px;
+}
+.con h2{
+    display:none;
+}
+.con nav{
+    width:90%;
+    margin:20px auto;
+}
+.con nav>ul{
+    text-align:center;
+}
+.con nav>ul>li{
+    border:1px solid #cccccc;
+    width:30%;
+    display:inline-block;
+    margin:0px 3px 6px 3px;
+}
+.icon{
+    display:inline-block;
+}
+.mnu{
+    display:block;
+    padding:8px 0px;
+    font-size:1rem;/*1rem = 16px*/
+    font-weight:500;
+}
+.con nav>ul>li .icon{
+    width:83px;
+    height:66px;
+    background-image:url('../images/nav_icon.png');
+    background-size:360px;
+
+}
+.con nav>ul>li:nth-child(2) .icon{
+    background-position:-80px 0px;
+}
+.con nav>ul>li:nth-child(3) .icon{
+    background-position:-168px 0px;
+}
+.con nav>ul>li:nth-child(4) .icon{
+    background-position:-255px 0px;
+}
+.con nav>ul>li:nth-child(5) .icon{
+    background-position:8px -65px;
+}
+.con nav>ul>li:last-child .icon{
+    background-position:-76px -65px;
+}
+/* 오시는길 */
+.map_btn{
+    width:93.5%;
+    border:1px solid #cccccc;
+    display:block;
+    line-height:40px;
+    font-size:16px;
+    font-weight:600;
+    text-align:center;
+    color:rgb(95,95,95);
+    margin:20px auto;
+    
+}
+.map_btn .icon{
+    width:40px;
+    height:34px;
+    display:inline-block;
+    background-image:url('../images/nav_icon.png');
+    background-size:360px;
+    background-position:-168px -64px;
+    transform:translateY(2px);
+
+}
+/* 둔산점 */
+.info{
+    margin:20px auto;
+    width:96%;
+    height:70px;
+    background-image:url('../images/info_back.png');
+    background-size:100%;
+    color:#ffffff;
+    box-sizing:border-box;
+    text-align:center;
+}
+.info h2{display:none;}
+span.fa-phone{
+    font-size:24px;
+    padding-right:40px;
+    display:inline-block;
+    transform:translateY(-10px);
+}
+.tel{
+    display:inline-block;
+    padding-top:16px;
+    line-height:20px;
+}
+.tel a{
+    color:#ffffff;
+    font-size:16px;
+}
+
+
